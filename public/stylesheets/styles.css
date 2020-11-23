@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero {
+    height: 100vh;
+    background: #4f473b url('/img/background.png') no-repeat center / cover;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(79, 71, 59, 0.4);
+    z-index: 0;
+}
+
+.hero__text {
+    position: absolute;
+    top: 60%;
+    left: 1%;
+    z-index: 2;
+}
+
+.hero__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+
+    color: #f6f1e3;
+}
+
+.hero__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 60px;
+
+    color: #f5dece;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*=========PRODUCTS=============*/
+
+.products {
+    padding: 20px;
+    background-color: #dcd8ce;
+}
+.grid {
+    display: grid;
+    grid-template-rows: repeat(2, 400px);
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+
+.img-block {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    color: #434343;
+    margin-top: 20px;
+}
+
+.btn > img {
+    margin-left: 20px;
+}
+
+.btn--blue {
+    background-color: #dbebf7;
+}
+
+.product-block {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 26px;
+
+    color: #000000;
+}
+
+.border {
+    border: 1.2px solid #212025;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border > div {
+    border: 1.2px solid #221087;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-block__img > video {
+    width: 100%;
+    height: 400px;
+}
+.product-block__info {
+    display: grid;
+    grid-template-rows: repeat(3, 60px);
+    grid-template-columns: 60px 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.product-block__img--xiaomi > img {
+    width: 100%;
+    height: 340px;
+}
+
+.border--xiaomi {
+    border-radius: 100%;
+}
+
+.border--xiaomi > div {
+    border: 1.2px solid #d47303;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+
+.btn--xiaomi {
+    margin-top: -45px;
+    z-index: 5;
+}
+.btn--orange {
+    background-color: #feb27e;
+}
+
+.grid-usul {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+
+.reverse {
+    margin-top: 10px;
+    grid-template-columns: 2fr 1fr;
+    display: grid;
+    grid-gap: 10px;
+    height: 400px;
+}
